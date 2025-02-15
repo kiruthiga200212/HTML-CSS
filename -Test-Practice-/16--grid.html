@@ -1,0 +1,100 @@
+<html>
+<head>
+</head>
+<body>
+<style>
+body{
+background-color:oklab(from pink l a b / 0.5);}
+
+
+.container{
+background-color:rgba(255,255,255,0.6);
+width:80%;
+height:70vh;
+margin:0 auto;
+border:1px dashed grey;
+position:relative;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:15px;
+}
+
+.grid-box{
+position:absolute;
+display:grid;
+gap:10px;
+width:100%;
+grid-template-areas: "	head	head	"
+		"	two	.	"
+		"	two	.	"
+		"	two	.	";
+
+}
+
+.grid{
+background-color:oklab(from #a0d0FF calc(l + 0.1) a b / calc(alpha * 0.9));;
+width:100%;
+height:75px;
+}
+
+.grid-box div:nth-child(1){
+grid-area:head;
+width:100%;
+heigth:250px;
+background-color:oklab(from green l a b / 0.5);}
+.grid-box div:nth-child(2){
+grid-area:two;
+height:100%;
+width:100%;
+
+background-color:oklab(59.69% 0.1007 0.1191 / 0.5);}
+.grid-box div:nth-child(5){
+grid-column:span 3 / 6;}
+.grid-box div:nth-child(3){
+grid-column: 3 / 6;}
+.grid-box div:nth-child(6){
+height:250px;}
+
+.grid-box div:nth-child(7){
+grid-column:span 3 / 6;
+height:250px;}
+
+@media only screen and (max-width:1050px){
+.grid-box{
+
+height:100%;
+grid-template-areas: "	head	.	"
+		"	head	two	"
+		"	head	two	"
+		"	head	two	";
+}
+.grid-box div:nth-child(1){
+grid-area:head;
+width:100%;
+height:100%;
+background-color:yellow;}
+.grid-box div:nth-child(4){
+width:250px;}
+
+}
+
+</style>
+
+<div class="container">
+
+<div class="grid-box">
+<div class="grid"></div>
+<div class="grid"></div>
+<div class="grid"></div>
+<div class="grid"></div>
+<div class="grid"></div>
+<div class="grid"></div>
+<div class="grid"></div>
+
+</div>
+
+</div>
+</body>
+</html>

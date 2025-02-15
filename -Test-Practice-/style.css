@@ -1,0 +1,280 @@
+body{
+background-color:#fff;
+margin:0;
+padding:0;
+
+}
+*{
+text-decoration:none;
+scroll-behaviour:smooth;
+
+}
+nav{
+margin:0;
+padding:0;
+background-color:white;
+width:100%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+}
+.logo a{
+text-decoration:none;
+font-size:2em;
+padding:10px;
+
+}
+.main-heading ul{
+
+display:flex;
+flex-direction:row;
+align-items:center;
+justify-items:space-between;
+
+
+}
+ul li{
+
+margin-inline:5px;
+padding:10px;
+list-style:none;
+cursor:pointer;
+}
+
+ul li:hover{
+background-color:#000;
+color:#14b9b2;
+}
+.sign-in{
+padding:15px;
+background-color:black;
+color:white;
+border-radius:5px;
+outline:none;
+border:1px solid black;
+}
+ul li:nth-last-child(1){
+background-color:transparent;
+}
+.sign-in:hover{
+border:1px solid black;
+background-color:transparent;
+color:black;
+border-radius:0;
+}
+.main-section{
+width:100%;
+height:50vh;
+
+z-index:-1;
+background:linear-gradient(33.2deg, rgb(157, 147, 247) 30.2%, rgb(117, 176, 247) 61.4%);
+padding:20px;
+}
+.main-container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin:0 auto;
+width:80%;
+}
+
+.main__content h1{
+font-size:4em;
+
+}
+.main__content span{
+color:#2d0d94;
+}
+
+.side__contianer{
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+width:550px;
+height:35vh;
+
+}
+
+
+input[type=text] {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+border:none;
+border-bottom:1px solid black;
+background-color:transparent;
+}
+
+form{
+padding:20px;
+text-align:left;
+}
+
+.side-container input{
+margin:10xp;
+}
+
+button[type="submit"]{
+width:100%;
+padding:10px;
+background-color:#2d0d94;
+color:white;
+font-size:1em;
+outline:none;
+border:1px solid #2d0d94
+}
+
+button[type="submit"]:hover{
+background-color:transparent;
+color:black;
+}
+form a {
+float:right;
+text-decoration:underline;
+}
+.main__content h2{
+writing-mode: vertical-rl;
+text-orientation: upright;
+position:absolute;
+left:45px;
+background-color:white;
+
+}
+.main-scroll{
+
+width:100%;
+position:relative;
+}
+.scroll{
+text-align:center;
+
+}
+.scroll-down h1{
+font-size:10rem;
+position:relative;
+color:white;
+text-shadow: -1px 1px 0 #000,
+                         1px 1px 0 #000,
+                         1px -1px 0 #000,
+                         -1px -1px 0 #000;
+
+
+}
+.scroll-down h1 span{
+color:#2d0d94;}
+.scroll-down h3{
+position:absolute;
+left:38%;
+top:-50%;
+text-shadow:1px 1px  solid white;
+text-align:center;font-size:7rem;writing-mode: vertical-rl;
+text-orientation: upright;
+
+}
+.scroll-down h3{
+text-shadow: -1px 1px 0 #000,
+                         1px 1px 0 #fff,
+                         1px -1px 0 #fff,
+                         -1px 2px 0 #fff,
+ -1px -1px 0 #fff;
+z-index:1;
+}
+.scroll-down h3 span{
+opacity:0;
+}
+
+.black{
+background-color:black;
+width:150px;
+height:80px;
+position:absolute;
+top:-30%;
+}
+.glass{
+position:absolute;
+top:-10%;
+width:100px;
+height:100px;
+background: rgba(255, 255, 255,0.2);
+}
+.black-copy{
+position:relative;
+left:100%;
+width:300px;
+height:350px;
+background-color:grey;
+z-index:-1;
+}
+.glass-copy{
+position:relative;
+top:40%;
+left:-5%;
+background:rgba(255,255,255,0.2);
+width:150px;
+height:150px;
+border-radius:15px;
+}
+.th-main{
+widrh:100%;
+height:50vh;
+background: linear-gradient(60deg, rgb(2, 0, 97) 15%, rgb(97, 149, 219) 158.5%);
+width:50%;
+padding:20px;
+}
+th__container{
+width:100%;
+
+}
+.number{
+background-color:#ddd;
+width:70px;
+height:70px;
+
+
+border-radius:50%;
+}
+
+.number h1{
+font-size:2rem;}
+.container__box item{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+grid-template-rows:repeat(2,100px);
+
+}
+.container-box{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+grid-template-rows:repeat(2,100px);
+gap:10px;
+}
+.number h1{
+dispaly:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+vertical-align:center;}
+
+.item{
+width:100%;
+display:flex;
+justify-content:space-around;
+align-items:center;}
+.container-box img{
+position:absolute;}
+
+.last{
+
+background-color:black;
+  left: 400px;
+clip-path: polygon(0 10%, 100% 0, 100% calc(100% - 50vw), 0 50%);
+width:100%;
+height:100vh;
+z-index:-1;
+}

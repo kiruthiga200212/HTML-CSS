@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+<meta charset="UTF-8"/>
+<meta name="author" description="text websites without using images"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Home Page</title>
+<link rel="stylesheet" href="./stylesheet.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./media-query.css">
+</head>
+
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Product</a></li>
+<li><a href="#">Overview</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+<ul>
+<li>Cart(0)</li>
+<li>Help</li>
+</ul>
+</nav>
+</header>
+
+<section class="main-section">
+<div class="main__container">
+
+<div class="main__content">
+<div class="main__heading">
+<h1 class="main__h1">Build Your skills with Real classroom  <span> e -Learning. </span> </h1>
+<p>learning New things in new format develope Your softskills and hardskills. Gives you Real classroom feels with classroom blackboard experience.</p>
+<button type="button"><a href ="#" "target_blank"> Get Started </a></button>
+</div>
+<div class="main__image">
+<div class="blackboard"><span class="chalk"></span><p>Enjoy learning !<br><em> &nbsp;javascript , php , ruby, dbms , big data , C# , .Net,  react.js , python , java.</em></p></div>
+
+</div>
+<?div>
+
+</div>
+
+
+</section>
+
+
+
+
+<section class="contact-section">
+<div class="form__container">
+
+<div class="form__heading">
+<h1>Start Register</h1>
+
+</div>
+
+<div class="form__content">
+<form action="#" method="post">
+<label for="fname">Firstname</lebel>
+<input type="text" id="fname" name="fname" required/>
+<label for="lname">Lastname</lebel>
+<input type="text" id="lname" name="fname" required/>
+<label for="dob">Date of birth</label>
+<input type="text" pattern="[mm/dd/yyyy]">
+<label for="email">Email</label>
+<input type="email" id="email" name="email"/>
+<input type="submit" value="submit"/>
+
+
+</form>
+
+<div class="form__image">
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+
+<section class="course">
+
+<div class="course__container">
+<div class="course__content">
+<h1 style="text-align:center;">Contect <span style="color:white;">With us</span></h1>
+
+<div id="flex"> <h1>Log IN </h1> <h1>Sign Up </h1></div>
+<div class="course-form">
+
+
+<div>Email
+<input type="text" id="fname" name="fname" required/>
+Password
+<input type="text" id="fname" name="fname" required/>
+<button id="submit">Submit</button>
+</div>
+<div>
+Email
+<input type="text" id="fname" name="fname" required/>
+Phone Number
+<input type="text" id="fname" name="fname" required/>
+<button id="submit-one">Submit</button>
+
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+

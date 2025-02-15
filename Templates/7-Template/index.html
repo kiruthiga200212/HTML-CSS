@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<style>
+    body{
+        background:linear-gradient(45deg,rgb(180, 73, 73) 50%,pink 20%),linear-gradient(108deg,rgb(82, 82, 180) 50% ,rgb(216, 165, 216)50%),linear-gradient(170deg,green 50%,olive 50%);
+        height:100vh;
+        background-blend-mode:overlay;
+
+    }
+    .container{
+height: 100vh;
+background-color: rgba(30, 35, 39, 0.589);
+backdrop-filter: blur(5px);
+text-align: center;
+padding: 25px;
+    }
+    h1{
+        padding:15%;
+        background-color: rgba(240, 248, 255, 0.63);
+        border-radius: 15px;
+        font-size: 5rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        backdrop-filter: blur(5px);
+        
+    }
+    h1:hover{
+        background-color: rgb(230, 179, 11);
+        animation: fill 5s linear;
+    }
+    @keyframes fill {
+        0%{height: 0vh;  background-color: rgb(20, 211, 122);}
+        50%{height: 15vh;  background-color: rgb(230, 208, 11);}
+        100%{height: 20vh;  background-color: rgb(201, 87, 182);}
+
+        
+    }
+</style>
+    <div class="container"><h1>Hello,Welcome</h1></div>
+    
+</body>
+</html>

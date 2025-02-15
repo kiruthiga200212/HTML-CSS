@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Stats Card Challenge</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;600;&display=swap");
+
+body {
+	font-family: "Inter", sans-serif;
+}
+
+/* 
+List of colors used 
+
+Heading & Card Heading - #111827
+Background color - #f3f4f6 
+Description, Text color - #6b7280 
+Number / Percentage color - #4f46e5
+
+Green Chip Background - #dcfce7 
+Green Arrow color - #22c55d
+Green Text color - #407f54
+
+Red Chip Background - #fee2e2
+Red Arrow Color - #ef4444
+Red Text Color - #991b1b
+
+
+
+
+*/
+.flex{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:space-around;
+	width:100%;
+	margin:0 auto;
+}
+p{font-size:16px;
+color:black;}
+.content{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	padding:10px;
+	background-color:#f3f4f6;
+	width:200px;
+	height:100px;
+	overflow:hidden;
+	border:1px solid lightgrey;
+}
+.total{
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+}
+h1{
+	color:#4f46e5;
+	font-size:1.5rem;
+}
+span,p,h3{
+color:black;
+font-size:12px;
+padding:5px;
+font-weight:200;
+}
+#growth{
+	background-color:#dcfce7;
+	border-radius:10px;
+	padding:2px;
+	margin-left:12px;
+}
+#growt{
+	background-color:#fee2e2;
+	border-radius:10px;
+	
+}
+</style>
+		<h3>Last 30 Days</h3>
+	<div class="container">
+<div class="flex-con">
+	<div class="flex">
+	<div class="content">
+		<div class="heading">
+			<h4>Total Subscriber</h4>
+		</div>
+		<div class="total">
+	<div><h1>78,999 <span>from 7988</span></h1></div>
+	<div id="growth">82%</div>
+
+		</div>
+	</div>
+	<div class="content">
+		<div class="heading">
+			<h4>Total Subscriber</h4>
+		</div>
+		<div class="total">
+	<div><h1>78,999<span>from 70,988</span></h1></div>
+	<div id="growth">12%</div>
+
+		</div>
+	</div>
+	<div class="content">
+		<div class="heading">
+			<h4>Total Subscriber</h4>
+		</div>
+		<div class="total">
+	<div><h1>78,999<span>from 70,988</span></h1></div>
+	<div id="growt">12%</div>
+
+		</div>
+	</div>
+</div>
+</div>
+	</div>
+</div>
+
+		
+	</body>
+</html>

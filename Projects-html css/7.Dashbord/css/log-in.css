@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Reenie+Beanie&display=swap');
+/*@font face
+    --main_font--- font-family:"poppins,san-serif"
+    --second_font--- font-family: "Kalam", cursive; highlight first letter
+    --cursive_font---   font-family: "Reenie Beanie", cursive;*/
+body{
+    font-family:"poppins,san-serif";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100vh;
+    background: linear-gradient(120deg,#ddd,rgba(155, 182, 184, 0.801),rgba(155, 182, 184, 0.596),white);
+}
+.container{
+    background-color: transparent;
+    box-shadow: 0 0 5px rgba(94, 94, 94, 0.212);
+    width: 300px;
+    height:450px;
+   background-color:rgba(255, 255, 255, 0.719);
+    padding:10px;
+    
+   
+}
+.sign{
+    display: flex;
+    justify-content:space-around;
+    font-size: 12px;
+
+}
+.sign h1::first-letter{
+    color:rgb(48, 48, 218);
+    font-size:25px;
+    font-family: "Kalam", cursive;
+
+}
+.sign h1{
+    background-color: #ddd;
+    padding:4px 12px;
+    border-radius: 10px;
+ 
+}
+.forms{
+    font-size: 1rem;
+    padding:10px;
+  
+
+    
+}
+.forms input{
+    margin:2px;
+    padding:10px;
+    width:90%;
+   
+}
+
+button{
+    margin: 5px;
+    background-color: transparent;
+    padding:4px;
+    width: 120px;
+    height: 45px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid  #404c58;
+    margin:20px;
+    margin-left: 60px;
+    
+}
+ button:hover{
+    background-color: #404c58;
+    color: white;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    margin:10px;
+}
+.sign-up{
+    text-decoration:none;
+    color:black;
+    
+}
+.sign-up > span{
+    color:blue;
+    text-decoration: underline;
+    font-size: 18px;
+
+}

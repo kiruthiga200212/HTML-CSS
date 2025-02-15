@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain.com | Be early to the future of the finance</title>
+    <link  rel ="icon" type="image/png" href="./imgs/logo.png" width="250px;"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.js"></script>
+<link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body>
+
+<header>
+<nav>
+<div class="logo"><img src="./imgs/logo.png"/><h1>Blockchain<span>.com</span></h1></div>
+<ul>
+<li>Wallet </li>
+<li>Excahnge</li>
+<li>Explorer</li>
+<li>Pay</li>
+<li>Intitutional</li>
+<li><i class="ri-more-fill"></i></li>
+</ul>
+
+<div  class="side-nav">
+<i class="ri-search-line"></i>
+<button type="button" id="log">Log In</button>
+<button type="button" id="sign">Sign Up</button>
+<button id="darkmode"type="button" onclick="myFunction()">Dark mode</button>
+</div>
+</nav>
+</header>
+
+
+<section class="main__container">
+<div class="main__content">
+<h1>Be early to the future of finance</h1>
+<h3>Buy Bitcoin, Ethereum, and other leading cryptocurrencies on a platform trusted by millions.</h3>
+
+<div class="main__form">
+<input type="email" placeholder="Your Email address">
+<button type="button" id="sign">Sign Up</button>
+</div>
+</div>
+
+</section>
+
+
+
+<section class="cards-sections">
+
+<div class="card__container">
+<div class="card__outline">
+<div class="card__content">
+<div class="card__items">
+<div class="card-heading">
+<h3>Market price</h3>
+<h1>$67,810.00</h1><span>USD</span>
+<p>The average USD market price across major bitcoin exchanges.</p>
+<div>
+<button type="button">Trade</button><span>+0.61%</span></div>
+</div>
+
+</div>
+
+<div class="card__items">
+<div class="card-heading">
+<h3>Average Block size(MB)</h3>
+<div>
+<h1>1.66</h1><span>MB</span></div>
+<p>The average block size over the past 24 hours in megabytes.</p>
+<div>
+<button type="button">speed</button><span>+0.21%</span></div>
+</div>
+
+</div>
+<div class="card__items">
+<div class="card-heading">
+<h3>Confirmed Transactions </h3>
+<h1>549,600</h1><span>Transactions</span>
+<p>The total number of confirmed transactions per day.</p>
+<div>
+<button type="button" id="trans">Transaction</button><span id="transac">-6.51%</span></div>
+</div>
+
+</div>
+<div class="card__items">
+<div class="card-heading">
+<h3>Mempool size(Bytes)</h3>
+<h1>94,774,849</h1><span>USD</span>
+<p>The aggregate size in bytes of transactions waiting to be confirmed.</p>
+<div><button type="button" id="low-trade">Trade</button><span id="low">-0.11%</span></div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+</section>
+
+
+<section class="wallet-section">
+<div class="wallet__container">
+<div class="wallet__content">
+<div class="wallet__heading">
+<button type="button"><i class="ri-smartphone-line"></i> Wallet</button>
+<h1>The only crypto wallet you’ll ever need</h1>
+<div class="wallet__para">
+<p>Buy, sell, and swap with ease
+Use a card or bank account to buy BTC, ETH, stablecoins, and other assets.</p>
+</div>
+<div class="wallet__para">
+<p>Earn rewards on your crypto</p></div>
+<div class="wallet__para">
+<p>Self-custody your crypto</p>
+</div>
+<div class="wallet__para">
+<p>Connect to DeFi</p>
+</div>
+<div class="wallet__button">
+<button type="button">Get started</button> 
+</div>
+</div>
+<div class="wallet__images">
+<img src="https://www.blockchain.com/static/img/home/products/app-ease.png"/>
+</div>
+
+<div class="bg-shapes">
+<div class="shape">
+<div class="triangle">
+</div>
+<div class="triangle">
+</div>
+</div>
+<div class="shape-two">
+<div class="cirlce">
+</div>
+<div class="square">
+</div>
+<div class="radial">
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+<section class="trading-section">
+<div class="trading__container">
+<div class="trading__content">
+
+<div class="trading__images">
+<div class="trade__card">
+<img src="https://www.blockchain.com/static/img/home/products/prod-exchange-fiat-currencies.png">
+</div>
+
+</div>
+<div class="trading__items">
+<button type="button"> <i class="ri-folder-chart-line"></i> &nbsp;Excahnge</button>
+<h1>Lightning-fast crypto trading</h1>
+<div class="trade__para">
+<p>Trade in 3 fiat currencies
+The Exchange supports USD, EUR, and GBP.</p>
+</div>
+<div class="trade__para">
+<p>A matching engine that can keep up with you</p></div>
+<div class="trade__para">
+<p>24/7 live chat support</p>
+</div>
+<div class="trade__para">
+<p>Margin Trading -Connect to DeFi</p>
+</div>
+<button id="trade-button" type="button">Trade Now</button>
+<div>
+
+
+<div class="trade-bg">
+<div class="trade__section-bg">
+<div class="t-triangle"></div>
+<div class="t-square"></div>
+<div class="t-circle"></div>
+</div>
+<div class="trade__section-bg">
+<div class="t-triangle"></div>
+<div class="semi-circle"></div>
+
+</div>
+<div class="trade__section-bg">
+<div class ="top-triangle"></div>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section>
+<div class="banner">
+<h1>Let us take you from zero to crypto</h1><button type="button">Get Started</button>
+<div class="banner-pattern">
+<div class="banner-circle">
+<div class="banner-circle fill-copy">
+</div>
+</div>
+<div class="banner-circle fill">
+<div class="stoke"></div>
+</div>
+</div>
+<div class="banner-circle fill-copy">
+</div>
+<div class="stoke-fill"></div>
+<div class="stoke-fill"></div>
+</div>
+
+
+
+</div>
+</section>
+
+
+
+<footer>
+<div class="footer">
+<div class="contact__container">
+<div class="contact__content">
+<div class="contact__items">
+<div class="logo"><img src="./imgs/logo.png"/><h1 id="b">Blockchain<span>.com</span></h1></div>
+<div class="line"></div>
+<div class="icon"><i class="ri-instagram-fill"></i><i class="ri-linkedin-box-fill"></i><i class="ri-facebook-box-fill"></i><i class="ri-whatsapp-fill"></i>
+</div>
+
+</div>
+
+<div class="contact-details">
+<div class="scan">
+<img src="https://www.blockchain.com/static/img/footer/QR_code_for_mobile.png">
+<h5>Scan to Download</h5></div>
+
+
+<div class="Products">
+<h3>Products</h3>
+<h4>Wallet</h4>
+<h4>Exchange</h4>
+<h4>Explorer</h4>
+<h4>Institutional</h4>
+<h4>Earn</h4>
+<h4>pay</h4>
+</div>
+
+<div class="Resources">
+<h3>APIs</h3>
+<h4>Blog</h4>
+<h4>Podcast</h4>
+<h4>Bitcoin Price</h4>
+<h4>Ethereum Price</h4>
+<h4>Ethereum Price</h4>
+<h4>Solana Price</h4>
+</div>
+
+<div class="Company">
+<h3>About</h3>
+<h4>Careers <span class="hire"> Hiring</span></h4>
+<h4>Prime</h4>
+<h4>ventures</h4>
+<h4>Support</h4>
+<h4>Legal</h4>
+<h4>Privacy</h4>
+</div>
+
+<div class="Learn">
+<h3>Learn</h3>
+<h4>What is Bitcoin?</h4>
+<h4>What is crypto wallet?</h4>
+<h4>What is DEX?</h4>
+<h4>Learning portal</h4>
+<h4>Buy BTC</h4>
+<h4>Buy ETC</h4>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+
+
+
+
+    
+</body>
+</html>

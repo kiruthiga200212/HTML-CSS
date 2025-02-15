@@ -1,0 +1,75 @@
+.main__container__circle{
+display:flex;
+align-items:center;
+justify-content:center;
+backdrop-filter:blur(10px);
+z-index:2;
+}
+.main__container__circle::before,
+.main__container__circle::after{
+content:"";
+position:absolute;
+width:250px;
+height:250px;
+border-radius:50%;
+filter:blur(80px);
+ animation-name: example__main;
+  animation-duration: 10s;
+animation-iteration-count: infinite;
+
+}
+.main__container__circle::before{
+background-color: transparent;
+  right:0;
+  bottom:0;
+  z-index:0;
+  animation-name: example__main__circle;
+  animation-duration: 10s;
+animation-iteration-count: infinite;
+transition: all .4s ease;
+
+}
+
+.main__container__circle::after {
+  background: transparent;
+  left:5%;
+  top: 50%;
+  transform: translateY(-50%);
+z-index:-2;
+
+
+}
+@keyframes example__main {
+
+  0%   {background-color:#720e9e; left:500px; top:0px;}
+  25%  {background-color:#7cb9e8; left:200px; top:20px;}
+  50%  {background-color:blue; left:500px; top:200px;}
+  75%  {background-color:#7cb9e8; left:200px; top:350px;}
+75%  {background-color:#7cb9e8; left:600px; top:400px;
+transition: all .4s ease;}
+  100%  {background-color:#7cb9e8; left:0px; top:0px;}
+
+  
+}
+
+
+@keyframes example__main__circle {
+
+  0%   {background-color:#720e9e; top:0; left:1500px;
+
+
+
+
+    
+ }
+  25%  {background-color:#7cb9e8; top:500px; left:500px;
+transition: all .4s ease;}
+  50%  {background-color:blue; left:200px; }
+  75%  {background-color:#7cb9e8; left:1500px; top:350px;}
+ 80%  {background-color:#7cb9e8;left:500px; top:200px;}
+  100%  {background-color:#7cb9e8; left:1500px;top:0px;}
+
+  }
+
+
+

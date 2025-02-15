@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1 id="title" >Feedback Survey Form</h1>
+      <p id="description" class="subtitle is-3">
+        <b>Thank you</b> for taking the time to help us improve the plataform!
+      </p>
+    </header>
+    <main class="container">
+      <form id="survey-form" method="POST">
+        <div class="field">
+          <label for="name" id="name-label" class="label">Name</label>
+          <div class="control has-icons-left">
+            <input id ="name" type="text" name="name" class="input is-focused is-rounded" id="name" placeholder="e.g Keerthi Rajagopal" required
+              autocomplete="off" />
+              <span class="icon is-small has-icons-right">
+                <i class="fas fa-user"></i>
+              </span>
+          </div>
+        </div>
+        
+        <div class="field">
+          <label for="email" id="email-label" class="label">Email</label>
+          <div class="control has-icons-left has-icons-right">
+            <input type=" email" name="email" class="input is-rounded" id="email" placeholder="e.g abc@gmail.com" required
+            autocomplete="off" />
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="number" id="number-label" class="label">Age (optional)</label>
+          <div class="control">
+            <input type="number" class="input is-rounded" id="number" min="1" max="122" />
+          </div>
+        </div>
+        <div class="field">
+          <p class="label">Which option is Your best entertainment sports</p>
+          <div class="control">
+            <div class="select is-rounded">
+              <select name="role" id="dropdown">
+                <option disabled selected>Select Sports</option>
+                <option value="student" id="dropdown">Football</option>
+                <option value="full-time-job">Cricket</option>
+                <option value="full-time-learner">Hockey</option>
+                <option value="prefer-no-say">Baseball</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <p class="label">Are you interseted to join?</p>
+          <div class="control">
+            <div class="align">
+              <label for="definitely" class="radio">Definitely</label>
+              <input  style="height:20px; width:20px;" type="radio" name="recommend" id="definitely" value="definitely" />
+              
+            </div>
+            <div class="align">
+              <label for="maybe" class="radio">Maybe</label>
+              <input  style="height:20px; width:20px; " type="radio" name="recommend" id="maybe" value="maybe" />
+              
+            </div>
+            <div class="align">
+              <label for="not-sure" class="radio">Not sure</label>
+              <input  style="height:20px; width:20px;" type="radio" name="recommend" id="not-sure" value="not-sure" />
+              
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <p class="label">what did you learn from this course?</p>
+          <div class="select is-rounded">
+            <select class="select">
+              <option selected disabled>Select an option</option>
+              <option value="challenges">Challenges</option>
+              <option value="projects">related sports</option>
+              <option value="community">Community</option>
+              <option value="open-source">motivated</option>
+            </select><br>
+          </div>
+        </div>
+        <div class="field">
+          <p class="label">What would you like to see improved?</p>
+          <p class="label">(Check all that apply)</p>
+          <div class="align">
+            <label for="fp" class="checkbox">playground</label>
+            <input  style="height:20px; width:20px;"type="checkbox" id="fp" value="front-end-projects" />
+            
+          </div>
+          <div class="align">
+            <label for="bp" class="checkbox">Tables</label> 
+            <input  style="height:20px; width:20px;"type="checkbox" id="bp" value="back-end-projects" />
+            
+          </div>
+          <div class="align">
+            <label for="dv" class="checkbox">Atmosphere</label>
+            <input  style="height:20px; width:20px;"type="checkbox" id="dv" value="data-visualization" />
+           
+          </div>
+          <div class="align" >
+            <label for="ch" class="checkbox">Challenges</label>
+            <input  style="height:20px; width:20px;"type="checkbox" id="ch" value="challenges" />
+            
+          </div>
+          <div class="align">
+            <label for="osc" class="checkbox">Open Community</label>
+            <input  style="height:20px; width:20px;"type="checkbox" id="osc" value="open-source-community" />
+           
+          </div>
+          <div class="align">
+            <label for="ghr" class="checkbox">help rooms</label>
+            <input  style="height:20px; width:20px;" type="checkbox" id="ghr" value="gitter-help-rooms" />
+            
+          </div>
+          <div class="align">
+            <label for="vd" class="checkbox">theater</label>
+            <input  style="height:20px; width:20px;" type="checkbox" id="vd" value="videos" />
+            
+          </div>
+          <div class="align">
+            <label for="vd" class="checkbox">learning environment</label>
+            <input  style="height:20px; width:20px;" type="checkbox" id="vd" value="city-meetups" />
+           
+          </div>
+          
+          
+        </div>
+        <p class="label">Any comments or suggestions?</p>
+        <textarea name="sg" class="textarea" id="comments-suggestions" cols="50" rows="5"
+          placeholder="Type your comments or suggestions here..."></textarea>
+        <div class="field is-grouped mt-4 mb-6" id="buttons">
+          <div class="control">
+            <a  href="www.google.com"></a>
+            <input type="submit" value="Submit" class="button is-link" id="submit-button">
+            
+          </div>
+          <div class="control">
+            <input type="reset" value="Reset" class="button is-link has-background-dark" id="reset-button" href="#name">
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
+  

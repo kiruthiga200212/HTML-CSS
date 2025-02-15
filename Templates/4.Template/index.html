@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin:0;
+        padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(35, 62, 85);
+}
+        #background{
+           background-color: rgba(0, 0, 0, 0.205);
+           backdrop-filter: blur(15px);
+           width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left:0;
+            top:0;
+            z-index: 5;
+        }
+        #content{
+            width: 250px;
+            height: 250px;
+            border:5px solid rgba(173, 216, 230, 0.411);
+            margin: 15px;
+          
+            z-index: -1;
+            backdrop-filter: blur(5px);
+        }
+        #content:nth-child(1){
+            transform: rotate(25deg) translateY(250px);
+        }
+        #content:nth-child(2){
+            transform: rotate(45deg) translateY(-150px);
+        }
+
+        #content:nth-child(3){
+            transform: rotate(25deg) translateX(50px);
+        }
+
+        #content:nth-child(4){
+            transform: rotate(55deg) translateX(250px) translateY(-1050px);
+        }
+        #content:nth-child(5){
+            transform: rotate(75deg) translateX(350px) translateY(-1550px);
+        }
+        #content:nth-child(6){
+            transform: rotate(25deg) translateX(550px) translateY(-1950px);
+        }
+        #content:nth-child(7){
+            transform: rotate(125deg) translateX(400px) translateY(-1250px);
+        }
+#container{
+    width: 80%;
+    height: 80vh;
+    background-color: rgba(77, 228, 228, 0.11);
+    margin: 0 auto;
+  
+
+}
+#ocntainer_content{
+    position: absolute;
+    top: 30%;
+    left:10%;
+    background-color: rgba(245, 251, 253, 0.918);
+    width: 850px;
+    height: 450px;;
+    z-index: 12;
+    padding: 15px;
+}
+h1,p{
+    margin: 15px;
+    position: relative;
+}
+button{
+    padding:15px;
+    z-index: 45;
+    position: relative;
+    width: 100%;
+    margin-block: 25px;
+    background-color: rgb(49, 99, 175);
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border:none;
+    outline: none;
+}
+
+
+    </style>
+    <div id="container">
+    <div id="background"> </div>
+<div id="content"></div>
+<div id="content"></div>
+<div id="content"></div>
+<div id="content"></div>
+<div id="content"></div>
+<div id="content"></div>
+<div id="content"></div>
+   
+</div>
+
+<div id="ocntainer_content">
+    <h1>New Introduction </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, provident corrupti architecto eum, dolor expedita necessitatibus quos cupiditate incidunt doloremque obcaecati alias tenetur nobis nam tempora quis libero deleniti distinctio, aliquid unde nesciunt consectetur vero? Quisquam praesentium ab voluptatum sequi nisi, reiciendis doloribus officia quasi quo repellendus et facilis unde at facere cupiditate, nam deleniti ratione itaque, laudantium obcaecati velit. Minus cum fugiat unde in libero et voluptatem sunt nisi hic ducimus est voluptatibus dicta aspernatur nostrum incidunt beatae modi, sequi officia odit itaque iusto dolorem, dolore reprehenderit! Quasi, eaque quisquam? Facilis tempore tenetur quod tempora! Doloremque quas architecto nostrum ut unde, odio ea tenetur eos fuga obcaecati nulla vero incidunt accusantium adipisci modi enim nisi labore rerum sequi maiores repudiandae temporibus molestiae aliquid. Natus veritatis sequi excepturi officia perspiciatis dolore architecto ea illum consectetur, laudantium, corporis asperiores atque aliquam nobis accusantium iure doloribus quod! Distinctio quam dicta minus quibusdam.z</p>
+    <button>Sumbit</button>
+
+</div>
+
+</body>
+</html>

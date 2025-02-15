@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Responsive Navigation Bar Challenge</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<style>
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;600;&display=swap");
+
+body {
+	font-family: "Inter", sans-serif;
+}
+
+h2 {
+	font-weight: 600;
+	font-family: "Inter", sans-serif;
+}
+
+#title {
+	background-image: linear-gradient(to bottom right, #818cf8, #22d3ee);
+	/* background-clip: text; */
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-color: #818cf8;
+	color: transparent;
+}
+form{
+	display:flex;
+	flex-direction:column;
+	width:80%;
+	margin:0 auto;
+	box-shadow: 0 0 3px lightgrey;
+	padding:20px;
+}
+
+input{
+	margin-block:10px;
+	padding:8px;
+	border-radius:5px;
+	border:none;
+	outline:none;
+	box-shadow:0 0 2px lightgrey;
+
+}
+#float{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+button{
+	padding:10px;
+	border-radius:5px;
+	background-color:#f4e9f9;
+}
+
+
+</style>
+		
+		<h2 style="text-align:center;">Sign - In<span id="title"></span></h2>
+		<form>
+			<label>Email Address / Username</label>
+			<input type="text"/>
+			<label>Password</label>
+			<input type="password" required/>
+			<div id="float">
+				<div>
+				<input type="checkbox"/><label>Remember me</label></div>
+				<div><a href="#">Forgot your password?</a></div>
+			</div>
+			<button type="submit">Sign in</button>
+		</form>
+
+		<!-- It is recommended that you copy paste the svg instead of importing it as a file in this html document -->
+
+		<!-- Copy/paste Lock, Google & GitHub Logo from the "assets" folder  -->
+		
+	</body>
+</html>

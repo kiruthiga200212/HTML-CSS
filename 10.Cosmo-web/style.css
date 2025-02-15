@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+/*font-family: "WindSong", cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=WindSong:wght@400;500&display=swap');
+/*font-family: "Roboto Flex", sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=WindSong:wght@400;500&display=swap');
+/*  font-family: "Schibsted Grotesk", sans-serif;*/
+*{
+margin:0;
+padding:0;
+
+box-sizing:border-box;}
+
+body{
+padding:0;
+margin:0;}
+nav{
+position:absolute;
+right:0;
+top:0;
+color:white;
+float:right;}
+
+#nav-list ul {
+display:flex;
+align-content:center;
+padding-inline:15px;
+
+}
+
+#nav-list ul li{
+list-style:none;
+font-size:1.5rem;
+margin:10px;
+padding-inline:15px;
+border:1px solid rgba(255,255,255,0.3);
+padding:10px;
+}
+.alert__container{
+display:flex;
+align-items:center;
+justify-content:space-around;
+padding:12px;
+font-family: "Roboto Flex", sans-serif;
+}
+
+.alert__content h1{
+  font-family: "Roboto Flex", sans-serif;
+}
+p{
+  font-family: "Schibsted Grotesk", sans-serif;}
+.alert{
+background:linear-gradient(40deg,#d57eeb,#fecfef,#ff9a9e);
+text-transform:capitalize;}
+
+.close button{
+padding:10px;
+border:none;
+background-color:rgba(255,255,255,0.3);
+border-radius:12px;
+font-size:0.89rem;
+border:1px solid transparent;
+transition:all .4s ease-in;
+text-transform:capitalize;
+}
+
+
+p span{
+color:#6e45e2;
+font-weight:600;}
+.close button:hover{
+border:1px solid white;
+transition:all .4s ease-in;
+background-color:rgba(255,255,255,0.6);}
+
+.close button i{
+font-size:1.2rem;
+vertical-align:middle;
+color:rgba(0,0,0,0.5);
+}
+.alert__content{
+display:flex;
+align-items:flex-start;
+justify-content:center;
+flex-direction:column;
+}
+.alert__content h1,p,button{
+margin-block:1rem;}
+
+.alert__content button{
+padding:10px;
+background-color:white;
+border:none;
+border-radius:10px;
+padding-inline:15px;
+margin-right:10px;
+font-size:1rem;
+color:#667eea;	
+font-weight:600;
+text-transform:capitalize;
+font-family: "Schibsted Grotesk", sans-serif;
+}
+
+.alert{animation:fade-away 5s linear forwards;
+position:absolute;
+top:0;
+left:0; 
+z-index:4;
+width:100%;}
+
+@keyframes fade-{
+0%{
+transform:translateY(-400px);}
+100%{transform:translateY(0);}}
+
+
+
+.main__container{
+height:100vh;
+width:100%;
+background:linear-gradient(40deg,#472f92 50%,#472f92 100%),linear-gradient( 150deg,#472f92,black),radial-gradient( 100% 100% at 10% 100%,#472f92  ,#007adf 100%),linear-gradient( 40deg,rgba(0,0,0,0.5),transparent),linear-gradient( -40deg,rgba(0,0,0,0.6),#472f92),radial-gradient( 25% 50% at 30% 80%,#007adf  ,#007adf, #472f92);
+background-blend-mode:color,color,overlay;
+}
+
+
+@media only screen and (max-width: 800px) {
+.alert__container{
+display:flex;
+align-items:flex-start;
+justify-content:space-around;
+}
+.alert h1{
+font-size:1rem;}
+
+.alert__content h1,p, button{
+margin:10px;}
+
+.alert__content div{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+}
+.alert__content button{
+font-size:0.8rem;}
+
+.alert p{
+font-size:0.8rem;}
+
+.close button{
+padding:5px;
+display:flex;
+align-items:center;
+justify-content:center;}
+
+}
+
+
+
+.main__content{
+display:flex;
+align-items:center;
+justify-content:space-around;
+color:white;
+height:100vh;
+width:75%;
+margin:0 auto;
+
+}
+
+.main__content h1{
+font-size:2.5rem;
+margin-block:15px;
+position:relative;
+z-index:9;}
+
+.main__content h2{
+font-weight:200;
+text-align:center;
+color:#667eea;
+font-size:1.5rem;
+  font-family: "Schibsted Grotesk", sans-serif;}
+
+.main__img img{
+
+position:relative;
+z-index:2;
+}
+
+.main__buttons{
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+z-index:5;
+
+}
+.main__buttons button:nth-child(1){
+background-color:rgba(255,255,255,0.3);
+}
+.main__buttons button{
+padding:10px;
+border:1px solid rgba(255,255,255,0.5);
+background-color:transparent;
+margin-inline:15px;
+border-radius:15px;
+color:white;}
+
+.main__buttons button:hover{
+background-color:rgba(255,255,255,0.3);}
+
+#flow{
+position:absolute;
+left:20%;
+transform:translateY(-50px);
+z-index:0;
+mask-image:linear-gradient(40deg,black,transparent);
+width:850px;}
+
+#product-img{
+transform:translateX(-40px);
+}
+
+.side__container{
+width:450px;
+font-size:1rem;
+position:absolute;
+bottom:0;
+left:100px;
+color:white;}
+
+.side__content p{
+font-size:0.9rem;
+width:250px;
+color:rgba(255,255,255,0.5);}
+
+.side__content button{
+padding:10px;
+border:none;
+border-radius:10px;
+border:1px solid rgba(255,255,255,0.5);
+background:transparent;
+color:white; }
+
+.sticky-button button{
+float:right;
+right:20%;
+bottom:10%;
+position:sticky;
+padding:15px;
+border-radius:10px;
+border:none;
+background-color:#6e45e2;
+color:white;
+z-index:100;
+margin:2px;
+
+}
+.sticky-button{
+position:absolute;
+
+right:10%;
+bottom:10%;
+float:right;
+border-radius:10px;
+background-color:white;
+overflow:hidden;
+}
+
+.sticky-button:after,
+.sticky-button:before{
+content:"";
+position:absolute;
+left:0;
+top:0;
+background:linear-gradient(60deg,black,transparent,black);
+width:100%;
+height:100%;
+animation: rotate 7s linear infinite;
+z-index:-1;
+}
+.sticky-button button:before{
+background-color:black;
+width:50%;
+z-index:-1;}
+
+@keyframes rotate{
+100%{transform:rotate(360deg); background-color:black;}}
+
+
+.sticky-button:hover{
+background:linear-gradient(black,#000);
+transform:rotate(0deg);
+}
+
+.second__container{
+background-color:white;
+width:100%;
+height:100vh;
+}
+nav ul li:hover{
+background-color:rgba(255,255,255,0.3);}
+
+
+@media only screen and (width:1000px){
+  .product__content{
+    width:250px;
+  }
+}
+
+

@@ -1,0 +1,75 @@
+<html>
+<head>
+</head>
+<body>
+<style>
+
+div:nth-child(1){
+background-color:black;
+color:white;
+}
+p:nth-of-type(1){
+color:red;
+}
+
+div:nth-child(3) p:nth-child(1){
+background-color:#ddd;
+padding:15px;}
+div:nth-child(3) p:nth-child(2){
+background-color:purple;
+color:white;
+padding:10px;}
+
+div:nth-child(2) ul li:nth-of-type(1){
+color:red;
+accent-color:yellow;}
+ul li::marker{
+color:blue;}
+
+div:nth-child(2) ul li:nth-of-type(2){
+background-color:green;}
+
+ol li:nth-child(1){
+background-color:blue;
+color:white;}
+ol li::marker{
+color:rgb(210,140,160);}
+ol li:nth-child(2){
+color:black;
+background-color:lightgreen;}
+ol li:nth-of-type(5){
+opacity:0.5;
+border:1px solid red;}
+
+
+</style>
+
+
+<div class="pseudo">
+<div>
+<p>paragraph section tags are used.</p>
+<p>Meaningful sentence </p>
+</div>
+
+<div>
+<ul>
+<li> list-item one should color red in text.</li>
+<li> list-item two should applied background color green.</li>
+<li> none.</li>
+<ul>
+</div>
+<div>
+<p>change color background in this paragraph tag</p>
+<p>change text color using pesudo class.</p>
+</div>
+<div>
+<ol>
+<li>this is orderd list. list item one with blue background-color.</li>
+<li>second list item only text color white and background lightgreen.</li>
+<li>none.</li>
+<li>Display</li>
+<li>nothing Display</li>
+</ol>
+</div>
+</body>
+</html>

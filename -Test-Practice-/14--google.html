@@ -1,0 +1,188 @@
+<!Doctype html>
+
+<head>
+<style>
+
+
+*{
+padding:0;
+margin:0;
+boz-sizing:border-box;
+text-decoration:none;
+font-family: arial,sans-serif;}  
+
+header{
+width:100%;}
+nav{
+display:flex;
+align-items:center;
+justify-content:flex-end;}
+
+ul {
+display:flex;
+align-items:center;
+justify-content:flex-start;
+margin:10px;
+}
+
+ul li{
+text-decoration:none;
+list-style:none;
+padding:10px;
+}
+
+ul li a{
+text-decoration:none;
+font-size:13px;}
+
+
+ul li a:hover{
+text-decoration:underline;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+grid-template-rows:repeat(3,1fr);
+gap:3px;
+margin:12px;}
+
+.grid-item{
+width:5px;
+height:5px;
+background-color:grey;
+border-radius:50%;
+border:none;
+font-size:2rem;
+}
+
+
+.profile-photo{
+width:19px;
+height:19px;
+background-color:#FF5733;
+border-radius:50%;
+vertical-align:middle;
+text-align:center;
+padding:10px;
+margin:12px;
+color:white;
+font-weight:500;
+}
+.main-container{
+display:flex;
+align-items:center;
+justify-content:center;
+width:100%;
+height:50vh;}
+
+.searchBox{
+width:680px;} 
+
+input{
+padding:15px;
+width:100%;
+border-radius:25px;
+border:none;
+outline:none;box-shadow:0 0 7px lightgrey;
+margin-block:30px;
+font-size:16px;}
+.searchArea{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+margin-block:10px;
+}
+
+.shortcut_container{
+width:100px;
+height:100px;
+border-radius:8px;
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-contant:space-around;
+}
+
+.shortcut_container:hover{
+background-color:#ddd;}
+
+.shortcut_container #add{
+width:20px;
+height:20px;
+border-radius:50%;
+background-color:#d3e4ff;
+position:absolute;
+text-align:center;
+padding:10px;
+margin:10px;
+font-size:18px;
+}
+#add-text{
+position:absolute;
+bottom:12px;
+font-size:14px;}
+</style>
+</head>
+<body>
+<section class="header-section">
+
+<header>
+<nav>
+<div class="list-item">
+<ul>
+<li><a href="https://mail.google.com/">Gmail</a></li>
+<li><a href="https://www.google.com/imghp?hl=en&tab=ri&ogbl">Images</a></li>
+
+</ul>
+</div>
+<div class="list-container">
+<div class="grid">
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+</div>
+</div>
+<div class="profile">
+<div class="profile-photo"><abbr title="profile">K</abbr></div>
+</div>
+</nav>
+
+
+</header>
+
+</section>
+
+
+<section class="google">
+
+<div class="main-container">
+  <div class="searchArea">
+        <div class="logo">
+            <img alt="Google" height="92" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/>
+        </div>
+        <div class="searchBox">
+<input type="search" placeholder="Search Goodle or type a URL">
+            </div>  
+<div class="shortcut">
+<div class="shortcut_container">
+<span id="add">+</span>
+<span id="add-text"><abbr title="Add shortcut">Add shortcut</abbr><span>
+</div>
+</div>       
+
+</div>
+</div>
+
+</section>
+
+</body>
+</html>

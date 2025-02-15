@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(177, 223, 70);
+    font-family: "Poppins", serif;
+    scroll-behavior: smooth;
+}
+button{
+    font-family: "Poppins", serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.26);
+    backdrop-filter: blur(13px);
+    padding: 15px;
+    margin: 15px 15px;
+    border-radius: 10px;
+    position: fixed;
+    width: 98%;
+    z-index: 2;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+nav ul li {
+    list-style: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+video{
+    object-fit: cover;
+}
+nav li:hover{
+    background-color: rgb(117, 179, 233);
+ }
+ .home-content{
+ position: absolute;
+ top:50%;
+left: 25%;
+text-align: center;
+transform: translate(50% 50%);
+width: 50%;
+margin: 0 auto;
+ }
+ div button{
+    padding: 15px;
+    margin: 5px;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background-color: transparent   ;
+ }
+ h1{
+    font-size: 2rem;
+    color: rgb(81, 54, 236);
+    text-transform: uppercase;
+    
+ }
+ .main-button{
+    padding:5px;
+    margin: 25px;
+    background-color: rgba(240, 248, 255, 0.336);
+    border-radius: 15px;display: flex;
+    backdrop-filter: blur(25px);
+ }
+ .main-button button:nth-child(1){
+    border: 1px solid aliceblue;
+ }
+ .main-button button:hover{
+    background-color: aliceblue;
+
+ }
+ .about-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    margin:0 auto;
+    padding:15px;
+ }
+ .about-img img{
+    width: 50%;
+    margin:0 auto;
+    object-fit: cover;
+ }
+ #scroll-image img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    position: absolute;
+    left:25%;
+ }
+ .third-section{
+    height: 200vh;
+    background-color: rgb(255, 255, 255);
+ }
+ .para{
+    width: 50%;
+    margin: 0 auto;
+    text-align: justify;
+ }
+ .second-section{
+    padding:25px;
+ }
+ #scroll-para{
+    padding-top: 30%;
+    
+ }
+ #image{
+   
+
+ 
+ }
+ .scroll-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+
+ }

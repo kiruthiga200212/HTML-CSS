@@ -1,0 +1,106 @@
+*{
+    color:rgb(0, 0, 0);
+    font-family: monospace;
+    transition: .4s ease-in-out;
+    user-select: none;
+}
+
+body{
+    background:linear-gradient(rgb(253, 225, 252),rgb(214, 217, 255));
+    background-repeat: no-repeat;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100vh;
+    text-align: center;
+    padding-top: 5vh;
+    overflow: hidden;
+}
+.main-contianer{
+    width:170px;
+    height:80vh;
+}
+.title-align{
+    display: flex;
+    place-content: center space-between;
+    width:170px;
+    margin: 0 auto;
+    padding:10px;
+    font-size: 1.5rem;
+    
+    
+   
+
+}
+
+.title-align .title-o{
+    background-color: rgb(63, 169, 255);
+    width:100%;
+    padding:10px;
+    margin:2px;
+
+}
+.title-align::before{
+    content: '';
+    background-color:transparent;
+
+}
+.title-align::before .title-align:hover{
+    background-color: aliceblue;
+
+}
+.title-align .title-x{
+    background-color: rgb(255, 63, 143);
+    width:100%;
+    padding:10px;
+    margin:2px;
+
+}
+.grid{
+    width:50%;
+    height:50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top:50px;
+    
+}
+.grid-container{
+   
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,100px);
+    width:100%;
+    border-collapse: collapse;
+    
+    
+}
+.div-grid-items{
+    place-content: center;
+    place-items: center;
+}
+.div-grid-items{
+    border:2px solid rgb(1, 4, 34);
+}
+#button{
+    background-color: rgb(17, 187, 73);
+    padding:15px;
+    width:250px;
+    margin:0 auto;
+    outline:none;
+    border:none;
+    font-size: 18px;
+
+}
+#button:hover{
+    background-color: rgb(0, 68, 255);
+
+}
+.div-grid-items:hover{
+    background-color: rgb(255, 63, 143);
+    
+}
+.grid-container div:nth-child(odd):hover{
+    background-color: rgb(63, 169, 255);
+}
+
+

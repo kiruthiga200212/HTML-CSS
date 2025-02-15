@@ -1,0 +1,42 @@
+<!doctype html>
+<head>
+</head>
+<body>
+
+<style>
+body{
+background-color:#ddd;}
+
+.grid-box{
+width:80%;
+margin:0 auto;
+display:grid;
+grid-template-columns:auto auto auto;
+gap:10px;}
+
+.grid-item{
+width:250px;
+height:250px;
+background-color:white;
+border:1px solid grey;
+}
+.grid{
+width:250px;
+height:250px;
+background-color:white;
+border:1px solid blue;}
+
+.grid-box div:nth-of-type(4){
+background-color:#ddd;}
+</style>
+<div class="grid-box">
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid"></div>
+<div class="grid"></div>
+<div class="grid"></div>
+<div class="grid"></div>
+</div>
+</body>
+
+</html>

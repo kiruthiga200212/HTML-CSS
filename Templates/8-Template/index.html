@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/svg-path-commander/dist/svg-path-commander.js"></script>
+</head>
+<body>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:   rgb(253, 236, 214);
+        }
+.wave-two svg{
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #5184DB;
+}
+.wave-two .shape-fill{
+   fill: #5184DB;
+}
+
+.wave .shape-fill {
+    fill: #8ae2c0;
+}
+
+.blob-motion{
+    position: absolute;
+    transform: translateY(-20%);
+
+}
+#blob1{
+    animation: rotate 7s alternate-reverse infinite;
+    transform: rotate(25deg) translate(55px);
+}
+@keyframes rotate {
+    0%{transform: rotate(25deg) translate(25px); scale:0.5;}
+    50%{transform: rotate(125deg);}
+    100%{transform: rotate(225deg);}
+    
+}
+#blob2{
+    animation: rotate2 5s alternate-reverse infinite ;
+    transform: rotate(25deg);
+}
+@keyframes rotate2 {
+    0%{transform: rotate(25deg); scale:0.5}
+    100%{transform: rotate(175deg); scale: 1.4;}
+    
+}
+#blob{
+    transform: translateX(-55px) rotate(25deg);
+    animation: rotate3 10s alternate-reverse infinite;
+}
+@keyframes rotate3 {
+    0%{transform: rotate(25deg); }
+    100%{transform: rotate(155deg); scale: 1;}
+    
+}
+.content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+h1{
+    font-size: 2rem;
+    background-color: #f3d3af;
+    border-radius: 50%;
+    padding: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    position: fixed;
+    left:27%;
+}
+ img{
+    position: fixed;
+    left:15%;
+    mask-image: linear-gradient(black 80%,transparent);
+}
+p{
+    position: absolute;
+    width:50%;
+    top:60%;
+    left:25%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+#line{
+    width:50%;
+    height:4vh;
+    background-color: #5184DB;
+    margin: 0 auto;
+    text-align: center;
+    color: aliceblue;
+    vertical-align: middle;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+    </style>
+    
+    <div class="wave">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+<section>
+    <div class="content"><img src="./profile.png"><h1>UI UX designer</h1></div>
+    
+    <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <g transform="translate(488.1666989753146 324.4956925471071)">
+            <path id="blob1"
+                d="M155.4 -169.2C182 -128.7 171 -64.3 165.8 -5.2C160.6 54 161.3 108 134.6 139.6C108 171.3 54 180.6 9.3 171.3C-35.4 162 -70.7 134 -120.7 102.4C-170.7 70.7 -235.4 35.4 -246.9 -11.5C-258.5 -58.5 -216.9 -116.9 -166.9 -157.4C-116.9 -197.9 -58.5 -220.5 2.9 -223.4C64.3 -226.3 128.7 -209.7 155.4 -169.2"
+                fill="#52bfe1"></path>
+        </g>
+        <g transform="translate(488.1666989753146 324.4956925471071)">
+            <path id="blob"
+                d="M155.4 -169.2C182 -128.7 171 -64.3 165.8 -5.2C160.6 54 161.3 108 134.6 139.6C108 171.3 54 180.6 9.3 171.3C-35.4 162 -70.7 134 -120.7 102.4C-170.7 70.7 -235.4 35.4 -246.9 -11.5C-258.5 -58.5 -216.9 -116.9 -166.9 -157.4C-116.9 -197.9 -58.5 -220.5 2.9 -223.4C64.3 -226.3 128.7 -209.7 155.4 -169.2"
+                fill="#52bfe1"></path>
+        </g>
+    
+    
+        <g transform="translate(445.56574456033 279.75996389223235)">
+            <path id="blob2"
+                d="M120.7 -98.9C170.7 -70.7 235.4 -35.4 246.2 10.8C257 57 214.1 114.1 164.1 152.9C114.1 191.7 57 212.4 7.7 204.7C-41.7 197.1 -83.4 161.1 -130.6 122.3C-177.8 83.4 -230.4 41.7 -238 -7.7C-245.7 -57 -208.4 -114.1 -161.2 -142.2C-114.1 -170.4 -57 -169.7 -10.8 -158.9C35.4 -148 70.7 -127 120.7 -98.9"
+                fill="#52bfe1" style="visibility:hidden"></path>
+        </g>
+    </svg>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint soluta quam fugit fugiat vel ratione, aliquid repellendus eum. Ullam, tempore dolorem. Error labore enim autem delectus culpa temporibus esse molestias, non fugiat natus explicabo qui corporis consequatur necessitatibus officia ullam accusantium molestiae minima? Deleniti porro qui atque, animi minima neque ea! Vitae, fugiat nostrum. Dolor, officiis ducimus officia velit id, rerum voluptatum quibusdam aperiam perspiciatis optio nam. Placeat natus adipisci quas mollitia aut itaque doloribus ea doloremque repudiandae iure, soluta est aspernatur voluptates porro? Aliquid expedita molestias corporis facilis ex animi quod accusamus nesciunt? Reiciendis cupiditate explicabo maiores minus incidunt! <div id="line">@Danie</div></p>
+
+</section>
+    <div class="wave-two">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path  d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <script>
+
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        How to change image dynamically
+        when user scrolls down?
+    </title>
+    
+    <style media="screen">
+        img {
+            position: fixed;
+            width: 30%;
+        }
+
+        .main-content {
+            padding-left: 35%;
+            height: 200vh;
+        }
+
+        h1,
+        h3 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20200122115631/GeeksforGeeks210.png"
+        alt="GeeksforGeeks Logo" id="myImage">
+
+    <div class="main-content">
+        <h1>GeeksforGeeks</h1>
+        <h3>First Image Section</h3>
+        <p>
+            Scroll past the below line 
+            to see the change
+        </p>
+        <hr>
+        <h3>Second Image Section</h3>
+        <p>
+            Scroll back up to see 
+            the original image
+        </p>
+    </div>
+
+    <script>
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            var image = document.getElementById("myImage");
+            if (document.documentElement.scrollTop > 150)
+                image.src = 
+"https://media.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-6.png";
+            else
+                image.src = 
+"https://media.geeksforgeeks.org/wp-content/uploads/20200122115631/GeeksforGeeks210.png";
+        }
+    </script>
+</body>
+
+</html>

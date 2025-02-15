@@ -1,0 +1,269 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:white;
+    color:red;
+    color:rgb(91, 31, 253);
+}
+
+.main-container{
+    width:100%;
+    height:100vh;
+    
+    background:linear-gradient(120deg, #db202de0, #a03cfd, #0e58c7),
+    radial-gradient(100%  100% at 50% 10%, #4debbe 0%, #a81309cb 100%),linear-gradient(to right, #ff158e, #b44982),linear-gradient(to left, #f5298c, #eed7d7), linear-gradient(to right, #910e1d00, #06b3b0),radial-gradient(50% 50% at 60% 50%, #f2f3f5, #e70165), radial-gradient(60% 60% at 10% 70%,  #85bed6, #6ff0a7 40%), linear-gradient(to left, #5e4eb1, #20bdff, #a0e0bc);;  
+     background-blend-mode:soft-light,color,color,overlay,exclusion,color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.login__container{
+    height:80vh;
+    width:80%;
+    margin:0 auto;
+    background:linear-gradient(40deg,rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 0 2px rgba(255,255,255,0.7);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.login__container img{
+    position: absolute;
+    right:0;
+    opacity: 0.7;
+
+
+}
+
+.login__container img:nth-child(1){
+    mask-image: linear-gradient(220deg,black,transparent 70%);
+    top:0
+}
+
+.login__container img:nth-child(2){
+    bottom:0;
+    left:0;
+    mask-image: linear-gradient(80deg,black,transparent 80%);
+}
+
+.login-form{
+    text-align: center;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 50vh;
+    width: 650px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    border-radius: 10px;
+    padding:10px;
+}
+.login-form > div{
+    padding:10px;
+}
+#sign-up{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width:100%;
+   padding:10px;
+}
+
+#sign-up div{
+  display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width:100%;
+    box-sizing: border-box;
+   
+}
+
+#sign-up div div:nth-of-type(1){
+    padding-right:15px;
+}
+
+#sign-up div div{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+#sign-up label{
+    font-weight:500;
+    padding-block: 0.6rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#sign-up input{
+    padding-block: 0.6rem;
+    width: 100%;
+}
+
+
+
+button{
+    padding:12px;
+    border:none;
+    background-color: #5e4eb1;
+    color: white;
+    width: 100%;
+    margin:15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    
+}
+h1,p{
+    color:rgba(5, 59, 175, 0.904);
+    text-align: center;
+ 
+
+}
+a {
+    text-decoration: none;
+    font-weight: 600;
+    
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#sign-up div:last-child{
+    text-align: center;
+    justify-content: center;
+}
+
+::placeholder{
+    padding-inline: 4px;
+    color:rgba(0,0,0,0.4);
+    
+}
+.loading{
+    position: absolute;
+    top:50%;
+    left:40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loading-container{
+    width:250px;
+    height: 250px;
+    border-radius: 50%;
+    padding:10px;
+    
+}
+
+.loading-object{
+    width:250px;
+    height: 250px;
+    border-radius: 50%;
+    border:10px solid white;
+    background-color:black;
+}
+
+
+
+
+
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  align-items: center;
+  background-color: #1D1F20;
+  display: flex;
+  justify-content: center;
+}
+
+.loader  {
+  animation: rotate 1s infinite;  
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom:30%;
+  display:none;
+}
+
+.loader:before,
+.loader:after {   
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 20px;  
+  width: 20px;
+}
+.loader:before {
+  animation: ball1 1s infinite;  
+  background-color: #cb2025;
+  box-shadow: 30px 0 0 #ca34f8;
+  margin-bottom: 10px;
+}
+.loader:after {
+  animation: ball2 1s infinite; 
+  background-color: #bf21df;
+  box-shadow: 30px 0 0 #8522be;
+}
+
+@keyframes rotate {
+  0% { 
+    -webkit-transform: rotate(0deg) scale(0.8); 
+    -moz-transform: rotate(0deg) scale(0.8);
+  }
+  50% { 
+    -webkit-transform: rotate(360deg) scale(1.2); 
+    -moz-transform: rotate(360deg) scale(1.2);
+  }
+  100% { 
+    -webkit-transform: rotate(720deg) scale(0.8); 
+    -moz-transform: rotate(720deg) scale(0.8);
+  }
+}
+
+@keyframes ball1 {
+  0% {
+    box-shadow: 30px 0 0 #d50cf0;
+  }
+  50% {
+    box-shadow: 0 0 0 #3462f8;
+    margin-bottom: 0;
+    -webkit-transform: translate(15px,15px);
+    -moz-transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #34f8b7;
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes ball2 {
+  0% {
+    box-shadow: 30px 0 0 #afd428;
+  }
+  50% {
+    box-shadow: 0 0 0 #f37704;
+    margin-top: -20px;
+    -webkit-transform: translate(15px,15px);
+    -moz-transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #97bf0d;
+    margin-top: 0;
+  }
+}
+

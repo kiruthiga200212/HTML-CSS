@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+<canvas id="canvas" width="250px" height="250px"></canvas>
+
+<script>
+function drawing(){
+const = getElementById("canvas");
+if (canvas.getContext){
+const ctx= canvas.getContext("2d");
+
+ctx.beingPath();
+ctx.moveTo(25,75);
+ctx.lineTo(75,105);
+ctx.lineTo(25,85);
+ctx.closePath();
+ctx.fill();
+}
+
+
+}
+drawing();
+</script>
+</body>
+</html>

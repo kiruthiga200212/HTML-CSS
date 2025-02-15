@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.4.0/remixicon.css" integrity="sha512-hH7VMMVfPgfkpYx2GazOEG6RrYM+y8cS7FzccwBTWQeyhPv01XYk0MVcuhh4EAimOELWvqKjhNwes/UsYoyN6w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+    <div class="main-container">
+    <div class="login__container" id="main">
+        <div>
+        <img src="./img/mockup.png">
+        <img src="./img/mockup.png"></div>
+        <div class="login-form">
+            <div>
+            <h1 class="sign-up">Let's connect work together!</h1>
+                <p>Sign Up and start Your journey</p></div>
+            <form id="sign-up" name="form">
+            <div>
+                <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="&#9865;eg: John Doe" required/></div>
+                <div>
+                <label for="userid">User ID</label>
+                <input type="text" id="userid" placeholder="John20034" required/></div>
+            </div>
+            <div>
+                <div>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder=" &#128386;John@gmail.com" required/></div>
+                <div>
+                <label for="phone-no">Phone Number</label>
+                <input id="phone-no" text="number" placeholder="&#9742 +91 " required/></div>
+            </div>
+            <div>
+                <div>
+                <label for="password">password</label>
+                <input id="password" type="password" placeholder="Strong-pass[@ # $]" required/></div>
+                <div>
+                <label for="confirm-password">Confirm Password</label>
+                <input id="confirm-password" type="password" placeholder="********" required/></div>
+            </div>
+<button type="submit" onclick="submitForm()"> Get Strated</button>
+
+
+<div><p>Already have an account? <a href="#">Log in</a></p></div>
+            </form>
+            
+        </div>
+       
+    </div>
+   
+    </div>
+
+
+    <div class="loader" id = "loader"></div>
+    
+    <script>  
+    function submitForm(){
+    document.getElementById("main").innerHTML="Welcome! ";
+    const para = document.createElement("p");
+    const wait = document.createTextNode("wait and continue ...");
+    para.append(wait);
+    document.getElementById("main").style.fontSize =" 4.5rem";
+    document.getElementById("loader").style.display = " block";
+    }
+</script>  
+ 
+</body>
+</html>

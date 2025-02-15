@@ -1,0 +1,43 @@
+<html>
+<head>
+
+</head>
+
+<body>
+<style>
+body{
+background:linear-gradient(40deg,#a8f9c6,#f7d7a0,#6fa8b5),
+radial-gradient(25% 50% at 50% 40%,#a8f9b4 10%,#a9c9c9 100%),
+radial-gradient(5% 10% at 90% 80%, #c8f8f7 0%,#c46f7f 70%),
+radial-gradient(2.5% 5% at 80% 60%, #c8f8f7 30%,#c46f7f 20%);
+background-blend-mode: overlay, color, overlay, difference, color-dodge, difference, normal;
+}
+
+.circle{
+width:250px;
+height:250px;
+border-radius:50%;
+box-shadow:-29px 11px 22px white, inset  19px -2px 22px white;
+position:absolute;
+right:0;
+z-index:6;
+filter:blur(15px);
+border:1px solid #ddd;
+}
+.main_container{
+width:80%;
+height:50vh;
+border:1px solid #ddd;
+margin:0 auto;
+border-radius:10px;
+background:linear-gradient(40deg,rgba(255,255,255,0.7),rgba(255,225,255,0.1));
+backdrop-filter:blur(22px);
+}
+
+</style>
+
+<div class="circle"></div>
+<div class="main_container">
+</body>
+
+</html>

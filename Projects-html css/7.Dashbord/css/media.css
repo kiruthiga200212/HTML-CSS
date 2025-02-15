@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Reenie+Beanie&display=swap');
+/*@font face
+    --main_font--- font-family:"poppins,san-serif";
+    --second_font--- font-family: "Kalam", cursive; highlight first letter
+    --cursive_font---   font-family: "Reenie Beanie", cursive;*/
+body{
+    padding: 0;
+   margin: 0;
+ 
+
+
+}
+
+
+@media only screen and (max-width: 1250px){
+    .cart{
+        display:none;
+    }
+  
+}
+@media only screen and (max-width: 950px){
+   .main-img {
+    width: 100%;
+   }
+ 
+}
+
+@media only screen and (max-width: 1320px){
+    .main{
+        width:100%;
+    }
+   
+}
+@media only screen and (max-width: 1100px){
+    .learn-more{
+        margin-right: 10px;
+        font-size: 14px;
+        width: 50%;
+        
+    }
+    .main-img img{
+        transition: .4s ease-in;
+        width:350px;
+    
+    }
+}
+@media only screen and (max-width: 650px){
+    .main-img-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .learn-more{
+        width:80%;
+        margin: 12px;
+        
+    }
+    
+    .content{
+        font-size: 12px;
+        margin:0;
+        padding:0;
+        font-family:'Courier New', Courier, monospace;
+    }
+    .content p{
+       font-size: 10px;
+       font-family:'Courier New', Courier, monospace;
+       display: none;
+    }
+    #search{
+        width: 200px;
+        
+    }
+    #second-main{
+        width:100%;
+        margin:0;
+    }
+    .align{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        
+    }
+    
+ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+.course{
+width:100%;
+}
+.course-details{
+    display: flex;
+    flex-direction: column;
+}
+   
+    
+   .cards{
+    width:100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    column-gap:10px ;
+   }
+   
+   .cards-items{
+    width:100%;
+    
+   }
+   .cards-items:hover{
+    transform: translateY(-5px);
+    transition: all .3s ease-in;
+   }
+   .show{
+    margin: 10px;
+    width:90%;
+    transform: translateX(-130px);
+   }
+   .full-container{
+    width:100%;
+    overflow: hidden;
+   }
+   .partner-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   }
+   .partner-logo ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(2,50px);
+    padding:0;
+    gap:10px;
+    padding: 10px;
+}
+.logo-container{
+    padding:0;
+    margin-block:20px;
+    width:100%;
+}
+.monthly-plans h2,p{
+    margin-left: 10px;
+    
+}
+.sub-plans{
+    display: grid;
+    transition: all .4s ease;
+    grid-template-columns: repeat(3,1fr);
+   
+}
+.team-plans{
+    width: 150px;
+    height:300px;
+}
+.subscription h2{
+    font-size: 20px;
+    text-align: left;
+
+}
+.subscription span{
+    font-size: 1em;
+}
+.others-learn{
+    width:100%;
+    margin:10px;
+}
+.container-people{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.container-people-item{
+   width:80%;
+  
+}
+.grid-container{
+    width:100%;
+    margin: 10px;
+}
+.box-items{
+    width:80%;
+    margin: 0 auto;
+}
+
+.grid-box-items:hover{
+    width:100%;
+    
+
+}
+}
